@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="pragma" content="no-cache">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <Style> 
+   /* setup */
+ :root{
+  --colorp2: #191919;
+  colorprimary: #000000;
+  colorsecondary:#ffffff;
+  colorprimary:#05f903;
+  colorlinks: #0abefb;
+  --ff:'Open Sans', sans-serif;
+  --h1: bold 54px/70px var(--ff);
+  --h2: bold 36px/36px var(--ff);
+  --h3: bold 24px/30px var(--ff);
+  --links: bold 18px/18px var(--ff);
+  --p2: bold 30px/36px var(--ff);
+  --p: bold 18px/30px var(--ff);
+  transition: 0.3s ease-in-out;
+ }
+ h1,
+ h2,
+ h3,
+.links,
+ .p2,
+ p
+ {
+    margin: 8px;
+ }
+ h1{font: var(--h1);}
+ h2{font: var(--h2);}
+ h3{font: var(--h3);}
+ .links{font: var(--links);}
+ .p2{font: var(--p2);}
+ p{font: var(--p);}
+ html{
+    scroll-behavior: smooth;
+ }
+ body{
+    font-family: var(--ff);
+    padding: 8px;
+    margin: auto;
+    background-color: #191919;
+    color: #ffffff;
+ }
+ section{
+    width: 90vw;
+    max-width: 1080px;
+    margin: auto;
+ }
+header{
+ margin-top: 20px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ height:80px ;
+}    
+a{
+    text-decoration:none ;
+    color:#0abefb ;
+    font: var(--links);
+}
+a:hover{
+    color: #0abefb;
+    transition: var(--transition);
+}
+header a{
+    color: #ffffff;
+    font-weight: normal;
+}
+.nav-menu{
+   display: flex; 
+   align-items: center;
+   gap: 60px;
+}
+.nav-menu li{
+    list-style: none;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar  {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: var(--transition);
+    background-color: #ffffff;
+}
+@media (max-width: 800px){
+    .hamburger  {
+        display: block;
+    }
+    .hamburge.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+ .hamburge.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburge.active .bar:nth-child(3){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .nav-menu{
+        padding-top: 40px;
+        background-color: #00000;
+        position: fixed;
+        right: 100%;
+        top: 80px;
+        align-items: flex-end;
+        flex-direction: column;
+        height: 100%;
+        transition: var(--transition);
+        margin: 0px;
+
+    }
+    .nav-item a{
+        padding: 0px 5vw;
+    }
+    .nav-menu.active{
+        right: 0;
+        transition: var(--transition);
+    }
+   
+}
+
+
+.parent{
+    display: -webkit-inline-box;
+    margin: 1rem;
+    padding: 1rem 1rem;
+    vertical-align: text-top;
+    
+}
+ .child{
+    display: -webkit-inline-box;
+     margin: 1rem;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+ }
+ .child1{
+    display: -webkit-inline-box;
+     margin: 1rem;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+ }
+
+ .child2{
+    display: -webkit-inline-box;
+     margin: 1rem;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+ }
+
+ .child3{
+    display: -webkit-inline-box;
+     margin: 1rem;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+ }
+
+p{
+    width: 150px;
+}
+div{
+
+    display: -webkit-inline-box;
+    border: 1px solid darkcyan;
+}
+</style>
+</head>
+<body>
+   
+    <header class="section"> 
+    <a href="https://alim100-tech.github.io/alim100"><img src="AG-image.webp" width="60" height="60" alt="" class="logo"></a>
+    <ul class="nav-menu">
+        <li class="nav-item">
+         <a href="https://alim100-tech.github.io/alim100" class="nav-link">Home</a>   
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Features</a>   
+           </li>
+    
+           <li class="nav-item">
+            <a href="#" class="nav-link">Contact</a>   
+           </li>
+
+           <li class="nav-item">
+            <a href="#" class="nav-link">About</a>   
+           </li>
+    </ul>
+    <div class="hamburger">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</div>
+    
+  </header>  
+  <h2>Welcome To My Website</h2>
+ <div>
+
+ <div class="parent"> <img src="AG-image.webp" width="200" height="200" alt="logo"> <p>The most common way to place 
+    two divs side by side is by using inline-block css property. The inline-block 
+    property on the parent placed the two divs side by side and as this is inline-block
+     the text-align feature worked here just like an inline element does.5 Jul 2021</p>
+    </div>
+     <div class="child" ><img src="agimage.png" alt="logo"> <p>The most common way to place 
+   two divs side by side is by using inline-block css property. The inline-block 
+   property on the parent placed the two divs side by side and as this is inline-block
+    the text-align feature worked here just like an inline element does.5 Jul 2021</p>
+
+ </div>
+
+ <div class="child1" ><img src="Ag-img.jfif" alt="logo"> <p>The most common way to place 
+    two divs side by side is by using inline-block css property. The inline-block 
+    property on the parent placed the two divs side by side and as this is inline-block
+     the text-align feature worked here just like an inline element does.5 Jul 2021</p>
+ 
+  </div>
+
+  <div class="child2" ><img src="AGimg.jpg" width="200" height="200" alt="logo"> <p>The most common way to place 
+    two divs side by side is by using inline-block css property. The inline-block 
+    property on the parent placed the two divs side by side and as this is inline-block
+     the text-align feature worked here just like an inline element does.5 Jul 2021</p>
+ 
+  </div>
+
+  <div class="child3" ><img src="AGImag.jpg" width="200" height="200" alt="logo"> <p>The most common way to place 
+    two divs side by side is by using inline-block css property. The inline-block 
+    property on the parent placed the two divs side by side and as this is inline-block
+     the text-align feature worked here just like an inline element does.5 Jul 2021</p>
+ 
+  </div>
+  </div>
+
+    <script >
+
+     const hamburger = document.querySelector
+     (".hamburger");
+     const navMenu = document.querySelector(".nav-menu")
+     hamburger.addEventListener("click", () =>{
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+     });
+
+     document.querySelectorAll(".nav-link").
+     forEach((n) =>n.addEventListener("click",
+        () =>{
+            hamnburger.classList.remove("active");
+            hamnburger.classList.remove("active");
+        }
+     ))
+    </script>
+
+  
+
+</body>
+</html>
